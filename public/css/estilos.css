@@ -1,0 +1,26 @@
+main{
+    margin-bottom: 25px;
+}
+
+footer{
+ background-color: #E2E5EB;
+ text-align: center;
+}
+
+footer img{
+    padding-top: 40px;
+    padding-bottom: 40px;
+   
+}
+
+.baja{
+    background: linear-gradient(to right, white 40% , rgb(56, 132, 204));
+}
+
+.media{
+    background: linear-gradient(to right, white 40% , rgb(204, 204, 37));
+}
+
+.alta{
+    background: linear-gradient(to right, white 40% , red);
+}

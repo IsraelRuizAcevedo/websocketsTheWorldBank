@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Laboratorio 2 Websockets</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="img/wb-logo.png" alt="wb-logo">
+    </a>
+  </nav>
+
+  <main>
+    <div class="container">
+      <h1 class="mt-4 mb-4 text-center">Regional River Basin
+        <span id="basin"></span>
+      </h1>
+      <div class="row">
+        <div class="col-md-6">
+          <table class="table table-hover table-sm table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Mes</th>
+                <th scope="col">Precipitación (mm)</th>
+                <th scope="col">Indicador</th>
+              </tr>
+            </thead>
+            <tbody id="tbodyPr">
+
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-md-6">
+          <table class="table table-hover table-sm table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Mes</th>
+                <th scope="col">Temperatura (ºC)</th>
+                <th scope="col">Indicador</th>
+              </tr>
+            </thead>
+            <tbody id="tbodyTas">
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <img src="img/logo-wbg-footer-en.svg" alt="">
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
